@@ -15,7 +15,7 @@ export default function Category(){
         if(name ===''){
             return;
         }
-        const apiClient = setupAPIClient();
+        const apiClient = setupAPIClient(null);
         await apiClient.post('/category',{name:name})
         toast.success('Categoria cadastrada com Sucesso!')
         setName('');
