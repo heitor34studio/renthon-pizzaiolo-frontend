@@ -7,7 +7,7 @@ export function setupAPIClient(ctx:GetServerSidePropsContext | null){
     let cookies = parseCookies(ctx);
 
     const api = axios.create({
-        baseURL: 'http://localhost:3333',
+        baseURL: 'https://db67-2804-1b3-a101-ba08-605d-8ab-6e-122d.ngrok-free.app',
         headers:{
             Authorization: `Bearer ${cookies['@renthon.token']}`
         }

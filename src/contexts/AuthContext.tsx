@@ -78,7 +78,7 @@ export function AuthProvider({children}:AuthProviderProps){
             toast.success('Cadastro feito com Sucesso!')
             Router.push('/')
         }catch(err){
-            toast.success('Erro ao cadastrar!')
+            toast.error('Erro ao cadastrar!')
         }
     }
     return(
