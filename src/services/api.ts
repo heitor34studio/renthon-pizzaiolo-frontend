@@ -7,7 +7,7 @@ export function setupAPIClient(ctx:GetServerSidePropsContext | null){
     let cookies = parseCookies(ctx);
 
     const api = axios.create({
-        baseURL: 'https://laughing-wood-92171.pktriot.net',
+        baseURL: 'https://renthon-pizzaiolo-backend.onrender.com',
         headers:{
             Authorization: `Bearer ${cookies['@renthon.token']}`
         }
